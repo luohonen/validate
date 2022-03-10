@@ -1,6 +1,6 @@
 {
     "name": "luohonen/validate",
-    "description": "支持PHP8的验证器",
+    "description": "compatible php8 validate",
     "type": "library",
     "license": "MIT",
 	"require": {
@@ -17,11 +17,5 @@
             "email": "545282636@qq.com"
         }
     ],
-    "minimum-stability": "dev",
-	"repositories": {
-      "packagist": {
-      "type": "composer",
-      "url": "https://mirrors.aliyun.com/composer//"
-      }
-	}
+    "minimum-stability": "dev"
 }

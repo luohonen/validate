@@ -85,9 +85,11 @@ class ValidateRule
      */
     protected function addItem(string $name, $rule = null, string $msg = '')
     {
-        if ($rule || 0 === $rule) {
+        if ($rule || 0 === $rule)
+        {
             $this->rule[$name] = $rule;
-        } else {
+        } else
+        {
             $this->rule[] = $name;
         }
 
@@ -140,7 +142,8 @@ class ValidateRule
 
     public function __call($method, $args)
     {
-        if ('is' == strtolower(substr($method, 0, 2))) {
+        if ('is' == strtolower(substr($method, 0, 2)))
+        {
             $method = substr($method, 2);
         }
 
@@ -153,7 +156,8 @@ class ValidateRule
     {
         $rule = new static();
 
-        if ('is' == strtolower(substr($method, 0, 2))) {
+        if ('is' == strtolower(substr($method, 0, 2)))
+        {
             $method = substr($method, 2);
         }
 
